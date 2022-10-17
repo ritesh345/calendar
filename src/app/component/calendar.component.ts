@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cal',
-  templateUrl: './cal.component.html',
-  styleUrls: ['./cal.component.css']
+  selector: 'app-calendar',
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.css']
 })
 
 
 
-export class CalComponent implements OnInit {
+export class CalendarComponent implements OnInit {
   // updated current year value 2022
   currentYear = new Date().getFullYear();
   maxYear = new Date(new Date().setFullYear(new Date().getFullYear() + 10)).getFullYear();
