@@ -1,0 +1,39 @@
+<section>
+    <div class="container" style="margin:auto; ">
+        <div class="row toprow" style="background:lightseagreen;     padding: 10px 5px 10px 5px;">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="display: flex;">
+                <select name="month" id="monthDD" (change)="selectMonth($event.target)" style="width:100px;">
+                    <option value="0">Jan</option>
+                    <option value="1">Feb</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">Aug</option>
+                    <option value="8">Sep</option>
+                    <option selected="selected" value="9">Oct</option>
+                    <option value="10">Nov</option>
+                    <option value="11">Dec</option>
+                </select>
+                <select id="yearDD" style="width:100px" (change)="selectYear($event.target)">
+                   
+                    <option *ngFor="let year of years" value="{{year}}" > {{year}}</option>
+                </select>
+
+                <div id="datePicker">Pick a date</div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="cal">
+                <div>
+                    <li class="days" *ngFor="let day of days"> {{day}} </li><li class="activeDates" value="{{date}}" (click)="pickDate($event.target)" *ngFor="let date of getAllDays" >
+                        {{date}}
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

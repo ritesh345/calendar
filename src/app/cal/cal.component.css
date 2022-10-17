@@ -1,0 +1,55 @@
+.container{
+    padding: 10px 5px 10px 5px;
+}
+#monthDD{
+    
+    margin-left: 20px;
+
+}
+ul { margin: 0; padding: 0; list-style: none;}
+  li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: calc(100%/7 - 2px);
+    text-align: center;
+    cursor: pointer;
+  }
+  li.days {
+    padding: 10px 0px;
+    background: #3679ad;
+    width: calc(100%/7 - 2px);
+}
+li.activeDates {
+  height: 90px;
+  text-align: start;
+    padding-left: 5px;
+    padding-top: 5px;
+  /* line-height: 100px; */
+}
+
+element.style {
+}
+li.days {
+    width: calc(100%/7-2px);
+    width: calc(100%/7 - 2px);
+}
+li.days[_ngcontent-pwq-c17] {
+    padding: 10px 0px;
+    background: #3679ad;
+}
+li.activeDates {
+  width: calc(100%/7 - 7px);
+  /* text-align: center; */
+}
+#datePicker{
+  background: white;
+    width: 100px;
+    margin: 0px 10px;
+    padding-left:10px;
+}
+select{
+  margin:0px 10px;
+}
+.selectedDate{
+  background: cadetblue;
+}
